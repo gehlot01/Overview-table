@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 100px;
+            padding-right: 400px;
+        }
+        header {
+            font-size: 40px;
+            font-family: sans-serif;
+            padding-left: 15px;
+            padding-bottom: 20px;
+        }
+
+        .sub {
+            border: 1px solid black;
+            box-shadow: 2px 2px 3px 2px;
+            padding: 10px;
+            font-family: sans-serif;
+
+        }
+
+        table,
+        td {
+            border-top: 1px solid rgb(146, 142, 142);
+            border-spacing: 0;
+            font-size: 15px;
+            font-family: sans-serif;
+     
+        }
+
+        td:nth-child(1) {
+            padding-right: 300px;
+            font-weight: bold;
+            padding-top: 5px;
+        }
+
+        td:nth-child(2) {
+            padding-right: 40px;
+            padding-top: 5px;
+            color: gray;
+        }
+
+        .b td:nth-child(1) {
+            padding-right: 400px;
+            padding-top: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+            border: 0px solid white;
+            padding: 5px;
+        }
+
+        .over,
+        .warning,
+        .repro {
+            display: inline-block;
+        }
+
+        a:hover {
+            background-color: rgba(53, 142, 186, 0.776);
+            color: white;
+            border-radius: 5px;
+        }
+
+        button {
+            border-radius: 30px;
+            border: none;
+            background-color: grey;
+            color: white;
+        }
+        h3{
+            font-weight: normal;
+
+        }
+        .sub1, .sub2{
+            display: inline-block;
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+        .nav{
+            margin-top: 20px;
+        }
+        h3{
+            padding-bottom: 0px;
+        }
+        table{
+            padding-top: 0px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <header>Overview</header>
+        <div class="sub">
+            <div class="nav">
+            <nav>
+                <div class="over"><a href="#">Overview</a></div>
+                <div class="warning"><a href="#">Warning <button>5</button> </a></div>
+                <div class="repro"><a href="#">Reproduction</a></div>
+            </nav>
+        </div>
+            <div class="sub1">
+                <h3>Dataset statics</h3>
+                <table class="a">
+ 
+                    <tr>
+                        <td>Number of variables</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Number of observations</td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <td>Missing cells</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Missing cells(%)</td>
+                        <td>0.0%</td>
+                    </tr>
+                    <tr>
+                        <td>Duplicate rows</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Duplicate rows(%)</td>
+                        <td>0.0%</td>
+                    </tr>
+                    <tr>
+                        <td>Total size in memory</td>
+                        <td>31.2 KiB</td>
+                    </tr>
+                    <tr>
+                        <td>Average record size in memory</td>
+                        <td>40.0B</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="sub2">
+                <h3>Variable types</h3>
+                <table class="b">
+
+                    <tr>
+                        <td>Categorical</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Numeric</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
